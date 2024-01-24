@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dog Data</title>
+</head>
+<body>
+    <h1>Dog Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Breed</th>
+                <th>Color</th>
+                <th>Name</th>
+                <th>Postcode</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dogs in dog_df.itertuples %}
+            <tr>
+                <td>{{ dogs.Breed }}</td>
+                <td>{{ dogs.Color }}</td>
+                <td>{{ dogs.DogName }}</td>
+                <td>{{ dogs.Postcode }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
