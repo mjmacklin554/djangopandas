@@ -4,6 +4,10 @@ from django_pandas.io import read_frame
 from .models import Dog
 import pandas as pd
 
+
+# Functions in this file contain info from this github location
+# https://github.com/studygyaan/tutorials/blob/master/django/django-pandas/myapp/views.py
+
 def hello_world(request):
     return HttpResponse("Hello, world!")
 
